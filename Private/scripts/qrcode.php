@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * Copyright 2021, 2028 NuMode
+ * 
+ * This file is part of Foodlet.
+ *
+ * Foodlet is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * Foodlet is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with Foodlet. If not, see <https://www.gnu.org/licenses/>.
+ *
+ * qrcode.php
+ *
+ * Foodlet QRCode generator.
+ *
+ * @author Daniele Bonini <code@gaox.io>
+ * @copyrights (c) 2016, 2028 NuMode
+ * @license https://opensource.org/licenses/GPL-3.0
+ */
+
+//use QRcode;
+
+//Err::setLogOnlyHandlers();
+
+
+//QRcode::png(filter_input(INPUT_GET, "chl"));
+//QRcode::png(filter_input(INPUT_GET, "chl")??PHP_STR, false, QR_ECLEVEL_H, 4);
+QRcode::png(str_replace("~","#",filter_input(INPUT_GET, "chl"))??PHP_STR);
+
+//show benchmark
+QRtools::timeBenchmark();
+
+//rebuild cache
+QRtools::buildCache();
