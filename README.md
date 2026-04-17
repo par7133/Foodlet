@@ -1,7 +1,7 @@
 # Foodlet
 Everyone its menu. This is a NuMode project.
 
-This project is opensource distributed under GPL-3.0 license and supplied AS-IS. You cana download it and deploy it to have your bullet proof restaurant menu pretty ready.
+This project is opensource distributed under GPL-3.0 license and supplied AS-IS. Sure, you can download it and deploy it to have your bullet-proof restaurant menu pretty ready to be browsed.
 
 When you are in the need of our mods:
 - Depict, items QRcodes and prices comes for 100$ one time.
