@@ -1,5 +1,5 @@
 # Foodlet
-Everyone its menu. PHP &lt;=8.1, GPL3
+Everyone its menu. This is a NuMode project.
 
 This project is opensource distributed under GPL-3.0 license and supplied AS-IS. You cana download it and deploy it to have your bullet proof restaurant menu pretty ready.
 
