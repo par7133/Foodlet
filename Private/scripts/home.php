@@ -44,7 +44,12 @@
  $MAGICJAR3_PATH = $AVATAR_PATH . DIRECTORY_SEPARATOR . "magicjar3";
  
  $profilePic = APP_DEF_PROFILE_PIC;
- 
+
+ if (defined("APP_" . strtoupper(AVATAR_NAME) . "_EMAIL_CONTACT")) {
+   $CONTACT = constant("APP_" . strtoupper(AVATAR_NAME) . "_EMAIL_CONTACT"); 
+ } else {
+   $CONTACT = APP_EMAIL_CONTACT;
+ } 
  
  // PAGE PARAMETERS
  $lang = APP_DEF_LANG;
@@ -948,12 +953,12 @@
        $iEntry++;          
       }?>
       <?PHP endif; ?>
-      
-      <?PHP if (defined("APP_EMAIL_CONTACT") && APP_EMAIL_CONTACT!==PHP_STR): ?>
-      <h3 class="board-entry" style="border-radius:3px;font-size: 1.45vw; font-weight:700; float:left; background-color:lightgray; margin-right:4px; padding:4px;">
-        &nbsp;&nbsp;<a id="halContact" href="mailto:<?PHP echo(APP_EMAIL_CONTACT);?>" style="cursor:pointer; color: #000000;"><?PHP echo(APP_EMAIL_CONTACT);?></a>&nbsp;&nbsp;
-      </h3>
-      <?PHP Endif; ?>
+
+		 <?PHP if ($CONTACT!==PHP_STR): ?>
+		 <h3 class="board-entry" style="border-radius:3px;font-size: 1.45vw; font-weight:700; float:left; background-color:lightgray; margin-right:4px; padding:4px;">
+				&nbsp;&nbsp;<a id="halContact" href="mailto:<?PHP echo($CONTACT);?>" style="cursor:pointer; color: #000000;"><?PHP echo($CONTACT);?></a>&nbsp;&nbsp;
+		 </h3>
+		 <?PHP Endif; ?>
       
      </div>
    </div>  
