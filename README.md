@@ -14,6 +14,8 @@ To help please donate by clicking <a href="https://gaox.io/l/dona1">https://gaox
      
 ## Screenshots
 	   
- ![Homomm on desktop](/Public/static/res/screenshot1.png)   
+ ![Homomm on desktop](/Public/static/res/screenshot1.png) 
+
+ ![Homomm on desktop](/Public/static/res/screenshot2.png) 
      
 Feedback: <a href="mailto:code@gaox.io">code@gaox.io</a>
